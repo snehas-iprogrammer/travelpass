@@ -3,6 +3,7 @@ const express = require('express');
 const router = express.Router();
 const User = require('../models/user');
 const { getS3BannerData } = require('../services/s3BannerService');
+const emailService = require('../services/emailService');
 
 
 router.post('/getData', async (req, res) => {
